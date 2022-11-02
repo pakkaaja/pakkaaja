@@ -21,7 +21,9 @@ export default {
       targets: [
         { src: 'src/index.html', dest: 'dist' },
         { src: 'src/index.css', dest: 'dist' },
-        { src: 'src/webfonts', dest: 'dist' }
+        { src: 'src/webfonts', dest: 'dist' },
+        { src: 'src/sw.js', dest: 'dist' },
+        { src: 'src/manifest.webmanifest', dest: 'dist' },
       ]
     })
   ]
