@@ -102,18 +102,21 @@ importImages.addEventListener('change', () => {
 
 // export spritesheet
 exportSpritesheet.addEventListener('click', () => {
-  let link = document.createElement('a');
-  link.download = 'spritesheet.png';
-  link.href = canvas.toDataURL();
-  link.click();
-  const jsonFileData = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data.meta, 0, 2))}`;
-  link.download = 'data.json';
-  link.href = jsonFileData;
-  link.click();
-  const jsData = `const data = ${JSON.stringify(data.meta, 0, 2)};\n\nexport default data;`;
-  const jsFileData = `data:text/javascript;charset=utf-8,${encodeURIComponent(jsData)}`;
-  link.download = 'data.js';
-  link.href = jsFileData;
-  link.click();
-  link = null;
+  // allow export only when canvas isn't empty
+  if (data.canvas.images) {
+    let link = document.createElement('a');
+    link.download = 'spritesheet.png';
+    link.href = canvas.toDataURL();
+    link.click();
+    const jsonFileData = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data.meta, 0, 2))}`;
+    link.download = 'data.json';
+    link.href = jsonFileData;
+    link.click();
+    const jsData = `const data = ${JSON.stringify(data.meta, 0, 2)};\n\nexport default data;`;
+    const jsFileData = `data:text/javascript;charset=utf-8,${encodeURIComponent(jsData)}`;
+    link.download = 'data.js';
+    link.href = jsFileData;
+    link.click();
+    link = null;
+  }
 });
