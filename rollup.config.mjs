@@ -1,4 +1,4 @@
-import buble from '@rollup/plugin-buble';
+import { babel } from '@rollup/plugin-babel';
 import terser from '@rollup/plugin-terser';
 import css from 'rollup-plugin-import-css';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
@@ -12,7 +12,7 @@ export default {
     format: 'iife'
   },
   plugins: [
-    buble(),
+    babel({ babelHelpers: 'bundled' }),
     terser(),
     css(),
     nodeResolve(),
