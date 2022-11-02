@@ -6,5 +6,5 @@
   "start_url": "/pakkaaja/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "display": "standalone",
+  "display": "standalone"
 }
