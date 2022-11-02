@@ -1,0 +1,61 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#settings {
+  position: fixed;
+  bottom: 0%;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7b02e;
+  border-top-left-radius: 0.8rem;
+}
+
+#settings * {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#settings button {
+  background: none;
+  border: none;
+}
+
+#settings i {
+  border: none;
+  font-size: 200%;
+  cursor: pointer;
+  align-items: center;
+  color: whitesmoke;
+}
+
+#modal {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hide {
+  display: none;
+}
