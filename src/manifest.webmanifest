@@ -6,5 +6,13 @@
   "start_url": "/pakkaaja/",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "display": "standalone"
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/pakkaaja/icon.png",
+      "type": "image/png",
+      "sizes": "250x250"
+    }
+  ]
 }
