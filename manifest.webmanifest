@@ -1,0 +1,10 @@
+{
+  "name": "Pakkaaja",
+  "short_name": "pkaja",
+  "description": "a very minimal spritesheet packer",
+  "scope": "/pakkaaja/",
+  "start_url": "/pakkaaja/",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+}

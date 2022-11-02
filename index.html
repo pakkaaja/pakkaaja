@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <title>pakkaaja</title>
+  <link rel="canonical" href="https://pakkaaja.github.io/pakkaaja/" />
+  <link rel="manifest" href="/pakkaaja/manifest.webmanifest">
   <link rel="stylesheet" href="webfonts/all.mins.css"">
   <link rel=" stylesheet" href="index.css">
 </head>
@@ -20,6 +22,14 @@
   </section>
   <canvas></canvas>
   <script src="index.js"></script>
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register(
+        '/pakkaaja/sw.js',
+        { scope: '/pakkaaja/' }
+      )
+    }
+  </script>
 </body>
 
 </html>
