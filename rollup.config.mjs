@@ -24,6 +24,7 @@ export default {
         { src: 'src/webfonts', dest: 'dist' },
         { src: 'src/sw.js', dest: 'dist' },
         { src: 'src/manifest.webmanifest', dest: 'dist' },
+        { src: 'src/icon.png', dest: 'dist' },
       ]
     })
   ]
