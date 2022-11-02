@@ -1,6 +1,6 @@
 const path = '/pakkaaja';
 const app_prefix = 'pkaja';
-const version = '0.0.6';
+const version = '0.0.7';
 const urls = [
   `${path}/`,
   `${path}/index.html`,
