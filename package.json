@@ -1,0 +1,32 @@
+{
+  "name": "pakkaaja",
+  "version": "0.0.1",
+  "description": "a very minimal spritesheet packer",
+  "main": "src/index.js",
+  "scripts": {
+    "build-dev": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakkaaja/pakkaaja.git"
+  },
+  "keywords": [
+    "spritesheet-packer"
+  ],
+  "author": "Mrwan Ashraf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pakkaaja/pakkaaja/issues"
+  },
+  "homepage": "https://github.com/pakkaaja/pakkaaja#readme",
+  "devDependencies": {
+    "@rollup/plugin-buble": "^1.0.1",
+    "@rollup/plugin-commonjs": "^23.0.2",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-terser": "^0.1.0",
+    "rollup": "^3.2.5",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-import-css": "^3.1.0"
+  }
+}
