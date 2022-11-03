@@ -1,6 +1,6 @@
 {
   "name": "pakkaaja",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "a very minimal spritesheet packer",
   "main": "src/index.js",
   "scripts": {
