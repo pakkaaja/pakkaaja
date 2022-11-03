@@ -1,6 +1,6 @@
 {
   "name": "Pakkaaja",
-  "short_name": "pkaja",
+  "short_name": "Pakkaaja",
   "description": "a very minimal spritesheet packer",
   "scope": "/pakkaaja/",
   "start_url": "/pakkaaja/",
