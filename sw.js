@@ -1,6 +1,6 @@
 const path = '/pakkaaja';
 const app_prefix = 'pkaja';
-const version = '0.0.11';
+const version = '0.0.12';
 const urls = [
   `${path}/`,
   `${path}/index.html`,
@@ -40,7 +40,7 @@ self.addEventListener('fetch', (e) => {
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((keyList) => {
     return Promise.all(keyList.map((key) => {
-      if (key === cacheName) { return; }
+      if (key === version) { return; }
       return caches.delete(key);
     }));
   }));
