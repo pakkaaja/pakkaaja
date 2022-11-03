@@ -5,7 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "build-dev": "rollup -c -w",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "patch": "npm version patch --sign-git-tag",
+    "minor": "npm version minor --sign-git-tag",
+    "major": "npm version major --sign-git-tag"
   },
   "repository": {
     "type": "git",
